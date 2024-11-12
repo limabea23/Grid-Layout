@@ -1,24 +1,48 @@
 .grid-container{
     display: grid;
+    grid-template-columns: 15fr 5fr;
+    grid-template-rows: 5fr 5fr 8fr 8fr 5fr;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "section sidebar"
+    "article sidebar"
+    "footer footer";
+    gap: 5px;
+    height: 100vh;
+    background-color: #000000;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.header,
-.footer {
+.header {
     background-color: #4d6ed7;
+    grid-area: header;
 }
 
 .nav {
     background-color: #56bac6;
+    grid-area: nav;
 }
 
 .section {
     background-color: #f5d34e;
+    grid-area: section;
+    
 }
 
 .article {
     background-color: #ea7e61;
+    grid-area: article;
 }
 
 .sidebar {
     background-color: #ffffff;
+    grid-area: sidebar;
+}
+
+.footer {
+    background-color: #4d6ed7;
+    grid-area: footer;
 }
