@@ -1,0 +1,24 @@
+.grid-container{
+    display: grid;
+}
+
+.header,
+.footer {
+    background-color: #4d6ed7;
+}
+
+.nav {
+    background-color: #56bac6;
+}
+
+.section {
+    background-color: #f5d34e;
+}
+
+.article {
+    background-color: #ea7e61;
+}
+
+.sidebar {
+    background-color: #ffffff;
+}
